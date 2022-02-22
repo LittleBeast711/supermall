@@ -1,0 +1,19 @@
+<template>
+  <div id="profile">
+    <nav-bar />
+  </div>
+</template>
+
+<script>
+import NavBar from "@/components/common/navbar/NavBar";
+export default {
+  name: "Profile",
+  components: {
+    NavBar,
+  },
+};
+</script>
+
+<style scoped>
+
+</style>
