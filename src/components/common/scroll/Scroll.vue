@@ -31,10 +31,13 @@ export default {
     this.scroll = new BScroll(this.$refs.wrapper, {
       click: true,
       mouseWheel: true,
+      disableMouse: false,
+      disableTouch: false,
       probeType: this.probeType,
       pullUpLoad: this.pullUpLoad,
       observeDom: true,
       observeImage: true,
+      keepAlive: true,
     });
     //监听滚动的位置
     if (this.probeType === 2 || this.probeType === 3) {
@@ -65,9 +68,4 @@ export default {
 </script>
 
 <style scoped>
-.wrapper {
-  position: fixed;
-  width: 100%;
-  overflow: hidden;
-}
 </style>

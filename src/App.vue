@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+    <keep-alive exclude="Detail">
       <router-view />
+    </keep-alive>
     <main-tab-bar />
   </div>
 </template>
@@ -18,4 +20,7 @@ export default {
 
 <style>
 @import "assets/css/base.css";
+* {
+  touch-action: pan-y;
+}
 </style>

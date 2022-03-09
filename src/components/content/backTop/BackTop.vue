@@ -1,5 +1,5 @@
 <template>
-  <div class="back-top">
+  <div class="back-top" @click="topClick">
     <img src="../../../assets/img/common/top.png" alt="" />
   </div>
 </template>
@@ -7,17 +7,15 @@
 <script>
 export default {
   name: "BackTop",
-  methods:{
-  }
+  methods: {
+    topClick() {
+      this.$emit("backTop");
+    },
+  },
 };
 </script>
 
 <style scoped>
-.back-top {
-  position: fixed;
-  right: 10px;
-  bottom: 50px;
-}
 .back-top img {
   width: 50px;
   height: 50px;

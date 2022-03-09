@@ -1,14 +1,15 @@
 <template>
-  <div class="goods">
+  <grid-view>
     <goods-list-item
-      v-for="item in goods"
+      v-for="(item, index) in goods"
       :goods-item="item"
-      :key="item.list"
+      :key="index"
     />
-  </div>
+  </grid-view>
 </template>
 
 <script>
+import GridView from "@/components/common/gridview/GridView";
 import GoodsListItem from "./GoodsListItem.vue";
 
 export default {
@@ -23,14 +24,10 @@ export default {
   },
   components: {
     GoodsListItem,
+    GridView,
   },
 };
 </script>
 
 <style scoped>
-.goods {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 </style>
