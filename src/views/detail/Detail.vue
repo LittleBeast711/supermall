@@ -9,7 +9,6 @@
       class="content"
       ref="scroll"
       :probe-type="3"
-      :pull-up-load="true"
       @scroll="contentScroll"
     >
       <detail-swiper :top-images="topImages" />

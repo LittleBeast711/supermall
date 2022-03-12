@@ -69,8 +69,7 @@ export default {
 */
 .grid-view {
   display: flex;
-  box-sizing: border-box;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 </style>

@@ -46,7 +46,7 @@ export default {
       this.$emit("titleClick", index);
     },
     backClick() {
-      this.$router.push("/home");
+      this.$router.go(-1);
     },
   },
 };
