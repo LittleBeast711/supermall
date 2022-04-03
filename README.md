@@ -1,5 +1,5 @@
 # supermall1
-
+> 本项目是根据B站coderwhy的项目编写而成，主要是对vue的实践操作。
 ## Project setup
 ```
 npm install
